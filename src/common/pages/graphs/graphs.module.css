@@ -1,0 +1,13 @@
+.dragger {
+  display: inline-block;
+  height: 200px;
+  width: 100%;
+}
+
+.radio {
+  font-size: 18px;
+}
+
+.chart {
+  margin: 20px 0;
+}
