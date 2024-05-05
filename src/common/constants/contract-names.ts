@@ -1,3 +1,5 @@
 export enum ContractNames {
-  ServiceAvailability = 'service-availability'
+  ServiceAvailability = 'service-availability',
+  Commissions = 'commissions',
+  RemunerationNotice = 'remuneration-notice',
 }

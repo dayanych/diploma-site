@@ -20,12 +20,19 @@ const Parser = () => {
           value={contractType}
           defaultValue={contractType}
           size='large'
+          className={styles.radio}
         >
           <Radio
-            value={ContractNames.ServiceAvailability}
+            value={`${ContractNames.ServiceAvailability}/${ContractNames.RemunerationNotice}`}
             className={styles.radio}
           >
             Доступность услуг &rarr; Уведомление о размере вознаграждений Агента
+          </Radio>
+          <Radio
+            value={`${ContractNames.ServiceAvailability}/${ContractNames.Commissions}`}
+            className={styles.radio}
+          >
+            Доступность услуг &rarr; Уведомление о размере коммиссии
           </Radio>
         </Radio.Group>
       )

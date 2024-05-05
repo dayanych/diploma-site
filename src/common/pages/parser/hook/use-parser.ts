@@ -11,7 +11,7 @@ const apiConfig = getApiConfig();
 
 export const useParser = () => {
   const [currentStep, setCurrentStep] = useState(0);
-  const [contractType, setContractType] = useState<ContractNames>(ContractNames.ServiceAvailability);
+  const [contractType, setContractType] = useState<string>(`${ContractNames.ServiceAvailability}/${ContractNames.RemunerationNotice}`);
   const [path, setPath] = useState<string | null>(null);
   const [downloadLink, setDownloadLink] = useState<string | null>(null);
   const [fileLoading, setFileLoading] = useState<boolean>(false);
@@ -30,6 +30,8 @@ export const useParser = () => {
 
 
   const handleUpload = async (file: UploadFile) => {
+    console.log(contractType);
+    
     const path = file.response?.path;
     if (file.status === 'done') {
       const url = await parserRepository.downloadDocument(path);
@@ -44,7 +46,7 @@ export const useParser = () => {
   const props: UploadProps = {
     name: 'file',
     multiple: false,
-    action: `${apiConfig.apiUrl}/parser/service-availability/upload`,
+    action: `${apiConfig.apiUrl}/parser/${contractType}`,
     accept: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet application/vnd.ms-excel',
     maxCount: 1,
     showUploadList: false,

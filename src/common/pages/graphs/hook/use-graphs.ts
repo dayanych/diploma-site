@@ -12,7 +12,7 @@ export const useGraphs = () => {
   const messgaing = useMessage();
   const [currentStep, setCurrentStep] = useState(0);
   const [fileLoading, setFileLoading] = useState<boolean>(false);
-  const [contractType, setContractType] = useState<ContractNames>(ContractNames.ServiceAvailability);
+  const [contractType, setContractType] = useState<string>(`${ContractNames.ServiceAvailability}/${ContractNames.Commissions}`);
   const [graphsData, setGraphsData] = useState<any>(null);
 
   const nextStep = () => {
@@ -76,7 +76,7 @@ export const useGraphs = () => {
   const props: UploadProps = {
     name: 'file',
     multiple: false,
-    action: `${apiConfig.apiUrl}/graphs/service-availability/commissions`,
+    action: `${apiConfig.apiUrl}/graphs/${contractType}`,
     accept: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet application/vnd.ms-excel',
     maxCount: 1,
     showUploadList: false,

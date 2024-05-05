@@ -23,8 +23,8 @@ const Graphs = () => {
           size='large'
         >
           <Radio
-            value={ContractNames.ServiceAvailability}
-            className={styles.radio}
+            value={`${ContractNames.ServiceAvailability}/${ContractNames.Commissions}`}
+            rootClassName={styles.radio}
           >
             Доступность услуг &rarr; Коммиссии
           </Radio>

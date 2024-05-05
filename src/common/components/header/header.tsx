@@ -3,20 +3,36 @@ import styles from './header.module.css';
 
 const Header = () => {
   return (
-    <header className='container'>
+    <header>
       <nav>
         <ul className={styles.navUl}>
           <li>
-            <Link to="/">Главная</Link>
+            <Link to="/">
+              <p>
+                Главная
+              </p>
+            </Link>
           </li>
           <li>
-            <Link to="/parser">Парсер документов</Link>
+            <Link to="/parser">
+              <p>
+                Парсер документов
+              </p>
+            </Link>
           </li>
           <li>
-            <Link to="/graphs">Графики</Link>
+            <Link to="/graphs">
+              <p>
+                Графики
+              </p>
+            </Link>
           </li>
           <li>
-            <Link to="/contacts">Контакты</Link>
+            <Link to="/contacts">
+              <p>
+                Контакты
+              </p>
+            </Link>
           </li>
         </ul>
       </nav>
