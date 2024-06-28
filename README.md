@@ -1,30 +1,15 @@
-# React + TypeScript + Vite
+# React + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Parser
+1. Choose service
+   ![scr1](https://github.com/dayanych/diploma-site/assets/104127728/9910bfbd-cc80-4bb9-bf09-de30b9943d38)
+2. Load file and wait
+   ![scr2](https://github.com/dayanych/diploma-site/assets/104127728/4b130349-afe2-41ca-96a5-57847e99736c)
+3. Download parsed file
+   ![scr3](https://github.com/dayanych/diploma-site/assets/104127728/6fd74d39-10a5-442b-ac46-32b73e89f78a)
 
-Currently, two official plugins are available:
+## Graphics
+![scr5](https://github.com/dayanych/diploma-site/assets/104127728/9e573a3e-01c7-407a-96cc-155f8d66b965)
+![scr4](https://github.com/dayanych/diploma-site/assets/104127728/cb6b1037-e77c-47f1-a75d-0bb81f6023e0)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+[Backend](https://github.com/dayanych/diploma-core)
